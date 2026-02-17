@@ -4,3 +4,21 @@ img{
     padding: 0cm;
     height: 1%;
 }
+.navbar{
+    display: inline;
+    font-family: 'Roboto',sans-serif;
+    background-color: red;
+    padding: 5px;
+}
+.navbar2{
+    display: inline;
+    font-family: 'Roboto',sans-serif;
+    background-color: red;
+    padding: 5px;
+}
+.navbar3{
+    display: inline;
+    font-family: 'Roboto',sans-serif;
+    background-color: red;
+    padding: 5px;
+}
