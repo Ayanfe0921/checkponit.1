@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fictional resturant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstraps@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxlLFvY4kxILFvY47J16cr9ZwB07vP4JB+LH7qkQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--NAV BAR-->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-md">
+          <h1>GOOD FOOD</h1>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >home</a
+              >
+              <a class="nav-link" href="#menu">menu</a>
+              <a class="nav-link" href="#about">about</a>
+              <a class="nav-link" href="#contact">contact</a>
+        </div>
+      </nav>
+    </div>
+
+    <!--HERO SECTION-->
+    <header class="hero-section">
+      <h1>WELCOME TO KOWOPE CANTEEN</h1>
+      <p>THE BEST FOOD CANTEEN IN THE WHOLE WORLD</p>
+      <a style="text-decoration: none;" href="#menu" class="btn btn-warning">MENU</a>
+    </header>
+
+    <!--grid section/menu-->
+    <div class="menu">
+      <h1>OUR MENU</h1>
+      <section id="menu" class="container text-center">
+        <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img style="width: 480px; margin-left: 10px;" src="./images/WhatsApp Image 2026-03-07 at 14.10.16.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p style="margin-left: 10px;" class="card-text">  A classic Italian dish, spaghetti is a long, thin,
+                    cylindrical pasta made from durum wheat semolina..</p>
+                    <span style="margin-left: 10px; font-size: 18px;">$150.00</span>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img style="width: 500px;" src="./images/WhatsApp Image 2026-03-07 at 14.15.32.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">                    A popular West African dish, jollof rice is a flavorful
+                    one-pot meal made with long-grain rice, tomatoes, onions,
+                    garlic, and spices..</p>
+                    <span style="font-size: 18px;">$170.00</span>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img style="width: 450px; margin-left: 24px;" src="./images/WhatsApp Image 2026-03-07 at 14.26.03.jpeg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p style="margin-left: 24px;" class="card-text">    White rice and beans is a classic comfort food combo.
+                    Steamed white rice is paired with a hearty bean stew, often
+                    made with ingredients like black-eyed peas, onions, garlic,
+                    and spices..</p>
+                    <span style="margin-left: 24px; font-size: 18px;">$160.00</span>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+       <!--<h2 class="menu-title">OUR MENU</h2>
+        <div class="row">
+          <div class="row row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/WhatsApp Image 2026-03-07 at 14.10.16.jpeg"
+                  class="card-img-top"
+                  alt="spag"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SPAGHETTI</h5>
+                  <p class="card-text">
+                    A classic Italian dish, spaghetti is a long, thin,
+                    cylindrical pasta made from durum wheat semolina. It's often
+                    served with a variety of sauces, such as tomato-based,
+                    creamy, or oily, and can be paired with ingredients like
+                    meatballs, vegetables, or seafood. The key is to cook it al
+                    dente, so it retains a bit of bite, and then toss it with
+                    your chosen sauce and toppings.
+                  </p>
+                  <span class="price-tag">$150.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/WhatsApp Image 2026-03-07 at 14.15.32.jpeg"
+                  class="card-img-top"
+                  alt="jollof rice"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">JOLLOF RICE</h5>
+                  <p class="card-text">
+                    A popular West African dish, jollof rice is a flavorful
+                    one-pot meal made with long-grain rice, tomatoes, onions,
+                    garlic, and spices. The rice is cooked in a rich, slightly
+                    spicy tomato-based sauce, giving it a distinctive red-orange
+                    color and irresistible aroma. Often served with grilled
+                    meats, fish, or vegetables, jollof rice is a staple at
+                    gatherings and celebrations.
+                  </p>
+                  <p>
+                    <span class="price-tag">$200.00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/WhatsApp Image 2026-03-07 at 14.28.01.jpeg"
+                  class="card-img-top"
+                  alt="yam"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">YAM AND EGG</h5>
+                  <p class="card-text">
+                    A classic Nigerian breakfast combo! Yam and egg is a
+                    satisfying meal featuring boiled or fried yam (a starchy
+                    tuber) paired with scrambled, fried, or boiled eggs. The
+                    creamy yolk and fluffy egg complement the dense, slightly
+                    sweet yam, creating a filling and protein-packed start to
+                    the day. Often served with veggies or sauces on the side.
+                    Want more details?
+                  </p>
+                  <span class="price-tag">$75.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/WhatsApp Image 2026-03-07 at 14.26.03.jpeg"
+                  class="card-img-top"
+                  alt="ricee"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">RICE AND BEANS</h5>
+                  <p class="card-text">
+                    White rice and beans is a classic comfort food combo.
+                    Steamed white rice is paired with a hearty bean stew, often
+                    made with ingredients like black-eyed peas, onions, garlic,
+                    and spices. The creamy beans and fluffy rice make a
+                    satisfying and filling meal, often served with grilled meats
+                    or vegetables on the side. Sounds like a tasty combo! Want
+                    more details?
+                  </p>
+                  <span class="price-tag">$130.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/WhatsApp Image 2026-03-07 at 14.30.11.jpeg"
+                  class="card-img-top"
+                  alt="egg"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">FRIED EGG AND PLANTAIN</h5>
+                  <p class="card-text">
+                    A match made in heaven! Fried egg and fried plantain is a
+                    popular Nigerian breakfast combo. Crispy fried plantains
+                    (often sweet and caramelized) pair perfectly with a rich,
+                    runny fried egg. The crunchy plantain and silky egg textures
+                    complement each other beautifully, making for a satisfying
+                    and filling meal. Often served with bread or as a side to
+                    other dishes. Want more?
+                  </p>
+                  <span class="price-tag">$90.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/WhatsApp Image 2026-03-07 at 14.32.59.jpeg"
+                  class="card-img-top"
+                  alt="pounded yam"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">POUNDED YAM AND VEGETABLE SOUP</h5>
+                  <p class="card-text">
+                    Pounded yam and vegetable soup is a classic Nigerian dish.
+                    The pounded yam is smooth and fluffy, made from boiled yams
+                    pounded into a dough-like consistency. It's often served
+                    with a flavorful vegetable soup, typically made with leafy
+                    greens like spinach or bitter leaf, and sometimes featuring
+                    ingredients like okra or eggplant. The mild yam pairs
+                    perfectly with the rich, savory soup. A comforting combo!
+                    Want more details?
+                  </p>
+                  <span class="price-tag">$190.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--about section-->
+
+    <section id="about" class="container text-center">
+      <h2 class="about-title">ABOUT US</h2>
+      <div class="container">
+        <div class="row-1">
+          <div class="col-md-6">
+            <img
+              src="./images/WhatsApp Image 2026-03-07 at 14.35.16.jpeg"
+              class="about-img"
+              alt="DISHES"
+            />
+            </div>
+              <h2>ABOUT US</h2>
+              <p style="color:gray">
+                "Mama Kowope's kitchen is where love meets flavor! We cook with
+                care, serve with a smile, and add a dash of 'kowope' (care) to
+                every dish. Come taste the difference, come feel the warmth.
+                Good food, good vibes, and a whole lot of love - that's Mama
+                Kowope for you 😊."
+              </p>
+        </div>
+      </div>
+    </section>
+
+    <!--contact section-->
+
+    <div class="contact">
+      <section id="contact" class="container">
+        <h2 style="background-color: black;">CONTACT US</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label>Name</label>
+              </br>
+                <input type="text" class="form-control" />
+              </div>
+            </br>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+              </br>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                />
+              </div>
+            </br>
+              <div class="mb-3">
+                <label>meassage</label>
+              </br>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </br>
+              <label for="inputpassword" class="form-label">password</label>
+          </br>
+              <input type="password" id="inputpassword" class="form-control" />
+        </br>
+              <button type="submit" class="btn btn-primary w-100">
+                SUBMIT
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--footer section-->
+
+    <footer class="footer-botton">
+      <div class="container">
+        <p>&copy; good food hub.✌️</p>
+      </div>
+    </footer>
+  </body>
+</html>
