@@ -1,0 +1,71 @@
+// Problem 1: Sum of distinct elements
+ALGORITHM Sum_Distinct_Elements
+VAR
+    set1 : ARRAY_OF INTEGER[4] := [3, 1, 7, 9];
+    set2 : ARRAY_OF INTEGER[5] := [2, 4, 1, 9, 3];
+    sum : INTEGER := 0;
+    i, j : INTEGER;
+    found : BOOLEAN;
+BEGIN
+    // Step 1: Check elements of set1 against set2
+    FOR i FROM 0 TO set1.length - 1 DO
+        found := FALSE;
+        FOR j FROM 0 TO set2.length - 1 DO
+            IF (set1[i] = set2[j]) THEN
+                found := TRUE;
+                BREAK;
+            END_IF
+        END_FOR
+        
+        // If element is NOT in set2, add to sum
+        IF (NOT found) THEN
+            sum := sum + set1[i];
+        END_IF
+    END_FOR
+
+    // Step 2: Check elements of set2 against set1
+    FOR i FROM 0 TO set2.length - 1 DO
+        found := FALSE;
+        FOR j FROM 0 TO set1.length - 1 DO
+            IF (set2[i] = set1[j]) THEN
+                found := TRUE;
+                BREAK;
+            END_IF
+        END_FOR
+        
+        // If element is NOT in set1, add to sum
+        IF (NOT found) THEN
+            sum := sum + set2[i];
+        END_IF
+    END_FOR
+
+    Write("Total sum of distinct elements is: ", sum);
+END
+
+// Problem 2: Dot Product and Orthogonality
+// Procedure to calculate scalar product of two vectors
+PROCEDURE dot_product(v1, v2 : ARRAY_OF FLOAT, VAR ps : FLOAT)
+VAR
+    i : INTEGER;
+BEGIN
+    ps := 0;
+    FOR i FROM 0 TO v1.length - 1 DO
+        ps := ps + (v1[i] * v2[i]);
+    END_FOR
+END
+
+ALGORITHM Orthogonal_Check
+VAR
+    v1, v2 : ARRAY_OF FLOAT[3];
+    result : FLOAT;
+BEGIN
+    // Calculate the dot product using the procedure
+    dot_product(v1, v2, result);
+
+    // If dot product is 0, the vectors are orthogonal
+    IF (result = 0) THEN
+        Write("The vectors are orthogonal.");
+    ELSE
+        Write("The vectors are not orthogonal.");
+    END_IF
+END
