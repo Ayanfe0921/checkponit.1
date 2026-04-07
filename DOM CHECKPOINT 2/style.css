@@ -1,0 +1,38 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+margin: 0 auto;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* CONTAINER STYLING */
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* COLOR BOX STYLING */
+#color-box{
+    width: 500px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+/* CHANGE COLOR BTN STYLING */
+#change-color-btn{
+    padding: 10px 20px;
+  font-size: 16px;
+  border: solid white 3px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
